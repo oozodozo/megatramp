@@ -1,0 +1,5 @@
+html{color:#8c001a;font-size:1rem}
+
+@media (color-gamut: p3){
+html{color:color(display-p3 .52373 0 .09429)}
+}.title{color:red}
