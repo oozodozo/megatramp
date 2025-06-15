@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 
 const numbers = [2, 3, 5];
 

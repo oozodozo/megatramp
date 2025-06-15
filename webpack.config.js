@@ -30,15 +30,8 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, {
-          loader: 'css-loader',
-          options: {
-            importLoaders: 1
-          }
-        },
-          'postcss-loader'
-        ]
+        test: /\.(scss|css)$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
     ]
   },
@@ -47,7 +40,9 @@ module.exports = {
       template: './src/index.html'
     }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+             filename: '[name].[contenthash].css',
+       }),
 
   ]
 }
