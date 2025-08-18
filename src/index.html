@@ -6,13 +6,28 @@
     <title lang="ru">Мегатрамп</title>
 </head>
 <body class="body">
-<div class="header">
-  <div class="header__row">
-    <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="Логотип">
-    <ul class="header__menu"></ul>
+  <div class="wrapper">
+      <div class="content">
+        <div class="content__image-container">
+          <img src="<%=require('./images/megatramp_logo_black.svg')%>" alt="Акробат" class="content__image">
+        </div>
+        <div class="content__text">
+          <h1 class="content__text-title">Очень скоро!</h1>
+          <p class="content__text-description">Тут будет сайт твоего любимого батутного центра.</p>
+        </div>
+        <div class="content__connection">
+          <p class="content__connection-text">В данный момент вы можете записаться на тренировку по телефону</p>
+          <a href="tel:+79163631971" class="content__connection_mobile">Позвонить</a>
+          <a class="content__connection_desktop" href="tel:+79163631971">+7 (916) 363-19-71</a>
+        </div>
+        <div class="content__social">
+          <a target="_blank" href="https://vk.com/megatramp_batut"><img src="<%=require('./images/icons/logo-vk.svg')%>" alt="Иконка ВК"></a>
+          <a href="tg://resolve?domain=megatramp_batut"><img src="<%=require('./images/icons/logo-tg.svg')%>" alt="Иконка Телеграм"></a>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="footer__text">&copy Мегатрамп 2025</p>
+      </footer>
   </div>
-</div>
-
-<h1 class="title">Мегатрамп</h1>
 </body>
 </html>

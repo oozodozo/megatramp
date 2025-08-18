@@ -1,0 +1,22 @@
+.content__connection_mobile {
+  display: none;
+  width: 180px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #1192d2;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+
+  &:active {
+    color: #1192d2;
+    background-color: #fff;
+    border: 1px solid #1192d2;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+  }
+}

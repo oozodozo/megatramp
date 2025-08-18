@@ -1,0 +1,16 @@
+.content__connection_desktop {
+  font-family: Bounded, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+
+  @media (hover: hover) {
+    &:hover {
+      color: #e78200;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+.content__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  & > a {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:active {
+      opacity: .7;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    & > img {
+      width: 48px;
+      height: 48px;
+      margin: auto;
+    }
+  }
+}

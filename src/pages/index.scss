@@ -1,11 +1,17 @@
-$font-size: 1rem;
-$font-color: lch(28 99 35);
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/font.scss);
+@import url(../blocks/body/body.scss);
+@import url(../blocks/wrapper/wrapper.scss);
+@import url(../blocks/content/content.scss);
+@import url(../blocks/content/__image-container/content__image-container.scss);
+@import url(../blocks/content/__image/content__image.scss);
+@import url(../blocks/content/__text/content__text.scss);
+@import url(../blocks/content/__text-title/content__text-title.scss);
+@import url(../blocks/content/__text-description/content__text-description.scss);
+@import url(../blocks/content/__connection/content__connection.scss);
+@import url(../blocks/content/__connection-text/content__connection-text.scss);
+@import url(../blocks/content/__connection/_desktop/content__connection_desktop.scss);
+@import url(../blocks/content/__connection/_mobile/content__connection_mobile.scss);
+@import url(../blocks/content/__social/content__social.scss);
+@import url(../blocks/footer/footer.scss);
 
-html {
-  font-size: $font-size;
-  color: $font-color;
-}
-
-.title {
-    color: red;
-}
